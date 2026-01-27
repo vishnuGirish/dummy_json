@@ -1,3 +1,4 @@
+
 {
   "success": true,
   "status_code": 200,
@@ -184,7 +185,13 @@
         "trend_direction": "stable",
         "trend_pct_change": 2.3,
         "flagged_for_review": false,
-        "flag_reasons": []
+        "flag_reasons": [],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
+
       }
     },
     {
@@ -361,7 +368,12 @@
         "trend_direction": "increasing",
         "trend_pct_change": 5.2,
         "flagged_for_review": false,
-        "flag_reasons": []
+        "flag_reasons": [],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
       }
     },
     {
@@ -374,7 +386,17 @@
       "error_message": null,
       "flag_for_review": {
         "flagged": true,
-        "reasons": ["low_tlc_matches", "high_value_item"],
+        "reasons": [
+      {
+        "flag": "low_tlc_matches",
+        "reason": "only 2 internal data"
+      },
+      {
+        "flag": "high_mismatch_data",
+        "reason": "price variance greater than 30%"
+      }
+      ]
+     ,
         "review_notes": "Hermès Birkin requires manual pricing review due to limited TLC data and high value"
       },
       "input": {
@@ -538,7 +560,13 @@
         "trend_direction": "stable",
         "trend_pct_change": 1.8,
         "flagged_for_review": true,
-        "flag_reasons": ["low_tlc_matches", "high_value_item"]
+        "flag_reasons": ["low_tlc_matches", "high_value_item"],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
+
       }
     },
     {
@@ -715,7 +743,14 @@
         "trend_direction": "decreasing",
         "trend_pct_change": -3.5,
         "flagged_for_review": false,
-        "flag_reasons": []
+        "flag_reasons": [],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
+
+
       }
     },
     {
@@ -893,7 +928,13 @@
         "trend_direction": "stable",
         "trend_pct_change": 0.8,
         "flagged_for_review": false,
-        "flag_reasons": []
+        "flag_reasons": [],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
+
       }
     },
     {
@@ -1070,7 +1111,13 @@
         "trend_direction": "increasing",
         "trend_pct_change": 2.8,
         "flagged_for_review": false,
-        "flag_reasons": []
+        "flag_reasons": [],
+
+        "tlc_matches": 47,           
+        "external_matches": 8,        
+        "price_variance_cv": 9.0,    
+        "title_confidence": 94  
+
       }
     }
   ]
