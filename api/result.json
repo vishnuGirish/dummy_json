@@ -560,7 +560,16 @@
         "trend_direction": "stable",
         "trend_pct_change": 1.8,
         "flagged_for_review": true,
-        "flag_reasons": ["low_tlc_matches", "high_value_item"],
+        "flag_reasons": [
+        {
+        "flag": "low_tlc_matches",
+        "reason": "only 2 internal data"
+        },
+        {
+        "flag": "high_mismatch_data",
+        "reason": "price variance greater than 30%"
+        }
+        ],
 
         "tlc_matches": 47,           
         "external_matches": 8,        
