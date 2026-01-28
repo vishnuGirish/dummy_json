@@ -4,9 +4,9 @@
   "status_code": 200,
   "message": "All proposals processed successfully",
   "summary": {
-    "total": 6,
+    "total": 7,
     "successful": 6,
-    "failed": 0,
+    "failed": 1,
     "flagged_for_review": 1
   },
   "results": [
