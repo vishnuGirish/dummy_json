@@ -11,7 +11,7 @@
   },
   "results": [
   {
-    "proposal_id": 471599,
+    "proposal_id": 471601,
     "ai_status": "failed",
     "success": false,
     "error_code": "VISION_ANALYSIS_FAILED",
@@ -32,7 +32,18 @@
       "confidence": "failed",
       "confidence_score": 0,
       "flagged_for_review": true,
-      "flag_reasons": ["vision_failure", "unidentifiable_product"],
+      "flag_reasons": [
+      {
+        "flag": "vision_failure",
+        "reason": "unable to load images"
+      },
+      {
+        "flag": "unidentifiable_product",
+        "reason": "unable to load images"
+      }
+      ]      
+      
+      ,
       "tlc_matches": 0,
       "external_matches": 0,
       "title_confidence": 0
@@ -398,7 +409,6 @@
         "trend_pct_change": 5.2,
         "flagged_for_review": false,
         "flag_reasons": [],
-
         "tlc_matches": 47,           
         "external_matches": 8,        
         "price_variance_cv": 9.0,    
@@ -604,190 +614,6 @@
         "external_matches": 8,        
         "price_variance_cv": 9.0,    
         "title_confidence": 94  
-
-      }
-    },
-    {
-      "proposal_id": 471601,
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 19.2,
-      "created_at": "2026-01-15T10:33:00Z",
-      "updated_at": "2026-01-15T10:33:19Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": false,
-        "reasons": [],
-        "review_notes": null
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001237-1.jpg",
-          "https://cdn.tlc.com/images/prop-001237-2.jpg",
-          "https://cdn.tlc.com/images/prop-001237-3.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001237-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 94,
-          "reasoning": "Image 1 shows front view of Gucci bag with GG Marmont quilting pattern"
-        },
-        "original_title": "Gucci Black Bag",
-        "category_hint": "Handbags"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2200,
-          "extracted_title": "Gucci GG Marmont Small Matelassé Black Leather Shoulder Bag",
-          "brand": "Gucci",
-          "model": "GG Marmont",
-          "size": "Small",
-          "color": "Black",
-          "material": "Matelassé Leather",
-          "category": "Handbags",
-          "subcategory": "Shoulder Bag",
-          "confidence": 93,
-          "scale_detected": false,
-          "measured_dimensions": null,
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 1980,
-          "extracted_title": "Gucci Marmont Small Black Quilted",
-          "brand": "Gucci",
-          "model": "Marmont",
-          "size": "Small",
-          "color": "Black",
-          "material": "Quilted Leather",
-          "category": "Handbags",
-          "subcategory": "Crossbody",
-          "confidence": 91,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 3100,
-          "top_titles": [
-            {"title": "Gucci GG Marmont Small Shoulder Bag", "source": "Fashionphile", "price": 1650, "url": "https://fashionphile.com/..."},
-            {"title": "Gucci Marmont Small Black", "source": "Vestiaire Collective", "price": 1480, "url": "https://vestiairecollective.com/..."}
-          ],
-          "extracted_brand": "Gucci",
-          "extracted_model": "GG Marmont Small",
-          "category": "Handbags",
-          "external_prices_found": 15
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Handbags",
-        "gpt4o_category": "Handbags",
-        "serp_category": "Handbags",
-        "agreed_category": "Handbags",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 92,
-        "canonical_title": "Gucci GG Marmont Small Matelassé Black Leather Shoulder Bag",
-        "canonical_brand": "Gucci",
-        "canonical_model": "GG Marmont",
-        "canonical_size": "Small",
-        "canonical_color": "Black",
-        "canonical_material": "Matelassé Leather",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["Small", "26"],
-        "normalized_size": "Small (26cm)",
-        "size_equivalents": ["Small", "26cm", "S"],
-        "size_source": "model_detection",
-        "brand_model_context": "Gucci GG Marmont"
-      },
-      "step_5_database_search": {
-        "search_query": "Gucci GG Marmont Small Black",
-        "tlc_inventory": {
-          "total_matches": 62,
-          "exact_matches": 18,
-          "high_quality_matches": 38,
-          "products": [
-            {"product_id": "TLC-654321", "title": "Gucci GG Marmont Small Black Matelassé", "price": 1420, "listing_price": 1650, "sold_price": 1420, "condition": "Good", "match_score": 94, "sold_date": "2025-12-22", "image_url": "https://cdn.tlc.com/..."},
-            {"product_id": "TLC-654320", "title": "Gucci Marmont Small Shoulder Bag Black", "price": 1380, "listing_price": 1580, "sold_price": 1380, "condition": "Good", "match_score": 91, "sold_date": "2025-12-19", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Gucci GG Marmont Small", "brand": "Gucci", "orp": 2350, "pristine_price": 1800, "excellent_price": 1600, "good_price": 1400, "fair_price": 1150, "match_score": 88}]
-        },
-        "external_sites": {
-          "total_matches": 15,
-          "sites_searched": ["Fashionphile", "Vestiaire Collective", "The RealReal", "Rebag"],
-          "products": [
-            {"title": "Gucci GG Marmont Small Shoulder Bag", "source": "Fashionphile", "price": 1650, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 90, "url": "https://fashionphile.com/...", "in_stock": true},
-            {"title": "Gucci Marmont Small Black", "source": "Vestiaire Collective", "price": 1480, "original_condition": "Good condition", "mapped_condition": "Good", "match_score": 86, "url": "https://vestiairecollective.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Good",
-        "match_score_filtering": {"total_products_before": 78, "exact_90_plus": 20, "high_quality_80_89": 42, "similar_70_79": 12, "excluded_below_70": 4, "products_used": 74},
-        "outlier_removal": {"method": "IQR", "q1": 1350, "q3": 1550, "iqr": 200, "lower_bound": 1050, "upper_bound": 1850, "outliers_removed": 2, "outlier_values": [2100, 980]},
-        "median_calculation": {"tlc_prices_count": 38, "all_prices_count": 55, "source_used": "tlc_median", "prices_used": [1320, 1350, 1380, 1400, 1420, 1420, 1450, 1480, 1500, 1520], "median_value": 1420},
-        "trend_adjustment": {"trend_direction": "decreasing", "pct_change": -3.5, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 1420, "price_after_adjustment": 1420},
-        "recommended_prices_by_condition": {"pristine": 1800, "excellent": 1600, "good": 1400, "fair": 1150}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [1650, 1480, 1580, 1520, 1620], "tlc_listing_prices": [1650, 1580, 1620, 1550, 1600], "tlc_sold_prices": [1420, 1380, 1450, 1400, 1430], "avg_external": 1570, "avg_listing": 1600, "avg_sold": 1416},
-        "listing_to_sold_ratio": 0.89,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": 1550,
-        "suggested_selling_price": 1380,
-        "ai_reasoning": "Strong TLC data with 38 matches. Market trend slightly decreasing (-3.5%). External prices averaging $1,570. Recommend listing at $1,550 for quick sale or $1,600 for higher margin. Expected sale around $1,380.",
-        "ai_confidence": "high"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 1442, "std_dev": 98, "cv_percent": 6.8, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-12-22", "oldest_sale_date": "2025-08-10", "days_since_last_sale": 24, "freshness_level": "fresh"},
-        "source_contribution": {"tlc_inventory_pct": 69, "excel_reference_pct": 2, "external_sites_pct": 29, "tlc_inventory_count": 38, "excel_reference_count": 1, "external_sites_count": 16},
-        "overall_confidence": {"score": 91, "grade": "high", "factors": ["Excellent TLC data (38 matches)", "Low price variance (6.8%)", "Very fresh data (24 days)", "High model agreement (3/3)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": false,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "38 matches", "triggered": false},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "24 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "6.8% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Matelassé", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$1,420", "triggered": false}
-        ],
-        "manual_review_required": false,
-        "review_reason": null
-      },
-      "final_output": {
-        "ai_suggested_listing_price": 1550,
-        "ai_suggested_selling_price": 1380,
-        "recommended_price_by_condition": {"pristine": 1800, "excellent": 1600, "good": 1400, "fair": 1150},
-        "selected_condition": "Good",
-        "confidence": "high",
-        "confidence_score": 91,
-        "data_points_used": 55,
-        "price_source": "tlc_median",
-        "trend_direction": "decreasing",
-        "trend_pct_change": -3.5,
-        "flagged_for_review": false,
-        "flag_reasons": [],
-
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-
 
       }
     },
