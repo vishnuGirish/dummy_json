@@ -11,7 +11,7 @@
   },
   "results": [
     {
-      "proposal_id": "PROP-2026-001234",
+      "proposal_id": 471534,
       "ai_status": "done",
       "success": true,
       "processing_time_seconds": 18.5,
@@ -195,7 +195,7 @@
       }
     },
     {
-      "proposal_id": "PROP-2026-001235",
+      "proposal_id": 471518,
       "ai_status": "done",
       "success": true,
       "processing_time_seconds": 21.3,
@@ -377,7 +377,7 @@
       }
     },
     {
-      "proposal_id": "PROP-2026-001236",
+      "proposal_id": 471593,
       "ai_status": "done",
       "success": true,
       "processing_time_seconds": 25.8,
@@ -579,7 +579,7 @@
       }
     },
     {
-      "proposal_id": "PROP-2026-001237",
+      "proposal_id": 471601,
       "ai_status": "done",
       "success": true,
       "processing_time_seconds": 19.2,
@@ -763,7 +763,7 @@
       }
     },
     {
-      "proposal_id": "PROP-2026-001238",
+      "proposal_id": 471602,
       "ai_status": "done",
       "success": true,
       "processing_time_seconds": 22.7,
