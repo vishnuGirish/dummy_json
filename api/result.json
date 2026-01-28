@@ -10,6 +10,35 @@
     "flagged_for_review": 1
   },
   "results": [
+  {
+    "proposal_id": 471599,
+    "ai_status": "failed",
+    "success": false,
+    "error_code": "VISION_ANALYSIS_FAILED",
+    "error_message": "Vision analysis failed: Unable to identify product from provided images. All 3 AI models returned low confidence (<50%)...",
+    "error_details": {
+      "step_failed": "step_1_vision_analysis",
+      "gemini_vision_confidence": 32,
+      "gpt4o_vision_confidence": 28,
+      "google_lens_matches": 0,
+      "retry_attempted": true,
+      "retry_count": 2
+    },
+    "step_2_category_gate": null,
+    "step_3_consensus_scoring": null,
+    "final_output": {
+      "ai_suggested_listing_price": null,
+      "ai_suggested_selling_price": null,
+      "confidence": "failed",
+      "confidence_score": 0,
+      "flagged_for_review": true,
+      "flag_reasons": ["vision_failure", "unidentifiable_product"],
+      "tlc_matches": 0,
+      "external_matches": 0,
+      "title_confidence": 0
+    }
+     },
+
     {
       "proposal_id": 471534,
       "ai_status": "done",
