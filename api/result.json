@@ -31,19 +31,8 @@
       "ai_suggested_selling_price": null,
       "confidence": "failed",
       "confidence_score": 0,
-      "flagged_for_review": true,
-      "flag_reasons": [
-      {
-        "flag": "vision_failure",
-        "reason": "unable to load images"
-      },
-      {
-        "flag": "unidentifiable_product",
-        "reason": "unable to load images"
-      }
-      ]      
-      
-      ,
+      "flagged_for_review": false,
+      "flag_reasons": [],
       "tlc_matches": 0,
       "external_matches": 0,
       "title_confidence": 0
