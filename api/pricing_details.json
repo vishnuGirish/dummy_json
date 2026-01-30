@@ -1,0 +1,41 @@
+{
+  "proposal_id": "mysql_12345",
+  "ai_status": "done",
+  
+  "identification": {
+    "confidence_score": 90,
+    "max_score": 90,
+    "confidence_percent": 100,
+    "breakdown": {
+      "category": {"score": 40, "max": 40, "value": "Women's Handbags"},
+      "brand": {"score": 30, "max": 30, "value": "Louis Vuitton"},
+      "style": {"score": 10, "max": 10, "value": "Classic"},
+      "size": {"score": 10, "max": 10, "value": "MM"}
+    }
+  },
+  
+  "base_title": {
+    "title": "Louis Vuitton Classic MM Leather",
+    "confidence": "high",
+    "parsed": {"brand": "Louis Vuitton", "model": "Classic", "size": "MM", "material": "Leather"}
+  },
+  
+  "search_queries": [
+    "Louis Vuitton Classic Leather",
+    "Louis Vuitton Classic Leather MM",
+    "Louis Vuitton Classic MM Leather"
+  ],
+  
+  "results_summary": {
+    "external_prices": 40,
+    "tlc_matches": 75,
+    "master_sheet_refs": 1,
+    "filter_applied": "Good condition, in-stock only"
+  },
+  
+  "filters": {
+    "size_options": ["Nano", "Mini", "PM (~29cm)", "MM (~31cm)", "GM (~35cm)"],
+    "condition_options": ["Pristine", "Excellent", "Good", "Fair"],
+    "selected_condition": "Good"
+  }
+}
