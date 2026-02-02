@@ -1,41 +1,248 @@
 {
-  "proposal_id": 471593,
+  "proposal_id": 471534,
+  "status_code": 200,
+  "message": "successfull",
   "ai_status": "done",
-  
+  "success": true,
+  "processing_time_seconds": 18.5,
+  "created_at": "2026-01-15T10:30:00Z",
+  "updated_at": "2026-01-15T10:30:18Z",
+  "error_message": null,
+  "flag_for_review": {
+    "flagged": false,
+    "reasons": [],
+    "review_notes": null
+  },
   "identification": {
     "confidence_score": 90,
     "max_score": 90,
     "confidence_percent": 100,
     "breakdown": {
-      "category": {"score": 40, "max": 40, "value": "Women's Handbags"},
+      "category": {"score": 40, "max": 40, "value": "Handbags"},
       "brand": {"score": 30, "max": 30, "value": "Louis Vuitton"},
-      "style": {"score": 10, "max": 10, "value": "Classic"},
+      "style": {"score": 10, "max": 10, "value": "Neverfull"},
       "size": {"score": 10, "max": 10, "value": "MM"}
     }
   },
-  
   "base_title": {
-    "title": "Louis Vuitton Classic MM Leather",
+    "title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
     "confidence": "high",
-    "parsed": {"brand": "Louis Vuitton", "model": "Classic", "size": "MM", "material": "Leather"}
+    "parsed": {
+      "brand": "Louis Vuitton",
+      "model": "Neverfull",
+      "size": "MM",
+      "material": "Monogram Canvas"
+    }
   },
-  
   "search_queries": [
-    "Louis Vuitton Classic Leather",
-    "Louis Vuitton Classic Leather MM",
-    "Louis Vuitton Classic MM Leather"
+    "Louis Vuitton Neverfull Monogram Canvas",
+    "Louis Vuitton Neverfull Monogram Canvas MM",
+    "Louis Vuitton Neverfull MM Monogram Canvas"
   ],
-  
   "results_summary": {
-    "external_prices": 40,
-    "tlc_matches": 75,
+    "external_prices": 8,
+    "tlc_matches": 47,
     "master_sheet_refs": 1,
     "filter_applied": "Good condition, in-stock only"
   },
-  
   "filters": {
     "size_options": ["Nano", "Mini", "PM (~29cm)", "MM (~31cm)", "GM (~35cm)"],
     "condition_options": ["Pristine", "Excellent", "Good", "Fair"],
     "selected_condition": "Good"
+  },
+  "input": {
+    "image_urls": [
+      "https://cdn.tlc.com/images/prop-001234-1.jpg",
+      "https://cdn.tlc.com/images/prop-001234-2.jpg",
+      "https://cdn.tlc.com/images/prop-001234-3.jpg",
+      "https://cdn.tlc.com/images/prop-001234-4.jpg"
+    ],
+    "front_image_url": "https://cdn.tlc.com/images/prop-001234-1.jpg",
+    "front_image_detection": {
+      "method": "ai_detection",
+      "confidence": 95,
+      "reasoning": "Image 1 shows full frontal view of bag with logo visible"
+    },
+    "original_title": "LV Bag Brown",
+    "category_hint": "Handbags"
+  },
+  "step_1_vision_analysis": {
+    "gemini_vision": {
+      "status": "success",
+      "processing_time_ms": 2340,
+      "extracted_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
+      "brand": "Louis Vuitton",
+      "model": "Neverfull",
+      "size": "MM",
+      "color": "Brown",
+      "material": "Monogram Canvas",
+      "category": "Handbags",
+      "subcategory": "Tote Bag",
+      "confidence": 95
+    },
+    "gpt4o_vision": {
+      "status": "success",
+      "processing_time_ms": 2100,
+      "extracted_title": "Louis Vuitton Neverfull MM Monogram",
+      "brand": "Louis Vuitton",
+      "model": "Neverfull",
+      "size": "MM",
+      "color": "Brown/Tan",
+      "material": "Coated Canvas",
+      "category": "Handbags",
+      "subcategory": "Tote",
+      "confidence": 92
+    },
+    "google_lens_serp": {
+      "status": "success",
+      "processing_time_ms": 3200,
+      "top_titles": [
+        {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "url": "https://fashionphile.com/p/123"},
+        {"title": "LV Neverfull MM Tote Bag", "source": "Vestiaire Collective", "price": 1380, "url": "https://vestiairecollective.com/p/456"}
+      ],
+      "extracted_brand": "Louis Vuitton",
+      "extracted_model": "Neverfull MM",
+      "category": "Handbags",
+      "external_prices_found": 8
+    }
+  },
+  "step_2_category_gate": {
+    "passed": true,
+    "gemini_category": "Handbags",
+    "gpt4o_category": "Handbags",
+    "serp_category": "Handbags",
+    "agreed_category": "Handbags",
+    "agreement_count": 3,
+    "voting_result": "unanimous",
+    "manual_override_required": false
+  },
+  "step_3_consensus_scoring": {
+    "overall_confidence": "high",
+    "confidence_score": 94,
+    "canonical_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
+    "canonical_brand": "Louis Vuitton",
+    "canonical_model": "Neverfull",
+    "canonical_size": "MM",
+    "canonical_color": "Brown",
+    "canonical_material": "Monogram Canvas",
+    "brand_agreement": 3,
+    "model_agreement": 3,
+    "size_agreement": 3,
+    "disagreements": []
+  },
+  "step_4_size_normalization": {
+    "detected_sizes": ["MM", "32"],
+    "normalized_size": "MM (32cm)",
+    "size_equivalents": ["MM", "32cm", "31cm", "32"],
+    "size_source": "model_detection",
+    "brand_model_context": "Louis Vuitton Neverfull"
+  },
+  "step_5_database_search": {
+    "search_query": "Louis Vuitton Neverfull MM Monogram",
+    "tlc_inventory": {
+      "total_matches": 47,
+      "exact_matches": 12,
+      "high_quality_matches": 28,
+      "products": [
+        {"product_id": "TLC-987654", "title": "Louis Vuitton Neverfull MM Monogram Canvas Tote", "price": 1180, "listing_price": 1350, "sold_price": 1180, "condition": "Good", "match_score": 95, "sold_date": "2025-12-20", "image_url": "https://cdn.tlc.com/img1.jpg"},
+        {"product_id": "TLC-987653", "title": "Louis Vuitton Neverfull MM Monogram Brown", "price": 1150, "listing_price": 1320, "sold_price": 1150, "condition": "Good", "match_score": 92, "sold_date": "2025-12-15", "image_url": "https://cdn.tlc.com/img2.jpg"}
+      ]
+    },
+    "excel_reference": {
+      "total_matches": 1,
+      "products": [
+        {"title": "Louis Vuitton Neverfull MM", "brand": "Louis Vuitton", "orp": 2030, "pristine_price": 1600, "excellent_price": 1400, "good_price": 1200, "fair_price": 950, "match_score": 90}
+      ]
+    },
+    "external_sites": {
+      "total_matches": 8,
+      "sites_searched": ["Fashionphile", "Vestiaire Collective", "The Luxury Closet"],
+      "products": [
+        {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 88, "url": "https://fashionphile.com/p/123", "in_stock": true},
+        {"title": "LV Neverfull MM Tote", "source": "Vestiaire Collective", "price": 1380, "original_condition": "Good condition", "mapped_condition": "Good", "match_score": 82, "url": "https://vestiairecollective.com/p/456", "in_stock": true}
+      ]
+    }
+  },
+  "step_6_price_calculation": {
+    "condition_selected": "Good",
+    "match_score_filtering": {
+      "total_products_before": 56,
+      "exact_90_plus": 13,
+      "high_quality_80_89": 29,
+      "similar_70_79": 8,
+      "excluded_below_70": 6,
+      "products_used": 42
+    },
+    "outlier_removal": {
+      "method": "IQR",
+      "q1": 1165,
+      "q3": 1415,
+      "iqr": 250,
+      "lower_bound": 790,
+      "upper_bound": 1790,
+      "outliers_removed": 2,
+      "outlier_values": [2500, 2200]
+    },
+    "median_calculation": {
+      "tlc_prices_count": 28,
+      "all_prices_count": 40,
+      "source_used": "tlc_median",
+      "prices_used": [1100, 1120, 1150, 1150, 1180, 1180, 1200, 1200, 1220, 1250],
+      "median_value": 1180
+    },
+    "trend_adjustment": {
+      "trend_direction": "stable",
+      "pct_change": 2.3,
+      "adjustment_applied": false,
+      "adjustment_pct": 0,
+      "price_before_adjustment": 1180,
+      "price_after_adjustment": 1180
+    },
+    "recommended_prices_by_condition": {
+      "pristine": 1580,
+      "excellent": 1380,
+      "good": 1180,
+      "fair": 920
+    }
+  },
+  "step_7_ai_suggested_prices": {
+    "suggested_listing_price": 1350,
+    "suggested_selling_price": 1175,
+    "ai_reasoning": "Based on TLC historical data showing 87% listing-to-sold ratio for this model",
+    "ai_confidence": "high",
+    "data_inputs": {
+      "external_prices": [1450, 1380, 1420, 1390, 1480],
+      "tlc_listing_prices": [1350, 1320, 1380, 1400, 1290]
+    }
+  },
+  "step_8_quality_metrics": {
+    "overall_confidence": {"score": 87, "grade": "high"},
+    "data_points_used": 40,
+    "variance": {"cv_percent": 9.0, "is_acceptable": true},
+    "data_freshness": {"newest_days_ago": 12, "oldest_days_ago": 180, "avg_days_ago": 45}
+  },
+  "step_9_rare_item_detection": {
+    "is_rare": false,
+    "triggers": [],
+    "manual_review_required": false,
+    "review_reason": null
+  },
+  "final_output": {
+    "ai_suggested_listing_price": 1350,
+    "ai_suggested_selling_price": 1175,
+    "recommended_price_by_condition": {"pristine": 1580, "excellent": 1380, "good": 1180, "fair": 920},
+    "selected_condition": "Good",
+    "confidence": "high",
+    "confidence_score": 87,
+    "data_points_used": 40,
+    "price_source": "tlc_median",
+    "trend_direction": "stable",
+    "trend_pct_change": 2.3,
+    "flagged_for_review": false,
+    "flag_reasons": [],
+    "tlc_matches": 47,
+    "external_matches": 8,
+    "price_variance_cv": 9.0,
+    "title_confidence": 94
   }
 }

@@ -11,21 +11,107 @@
   },
   "results": [
   {
+    "proposal_id": 471518,
+    "ai_status": "done",
+    "success": true,
+    "processing_time_seconds": 25.8,
+    "created_at": "2026-01-15T10:32:00Z",
+    "updated_at": "2026-01-15T10:32:25Z",
+    "final_output": {
+      "ai_suggested_listing_price": 185000,
+      "ai_suggested_selling_price": 172000,
+      "flagged_for_review": true,
+      "flag_reasons": [
+        {
+          "flag": "low_external_matches",
+          "reason": "external comparable data below threshold"
+        }
+      ],
+      "tlc_matches": 62,
+      "external_matches": 14,
+      "price_variance_cv": 6.2,
+      "title_confidence": 96
+    }
+  },
+  {
+    "proposal_id": 471534,
+    "ai_status": "done",
+    "success": true,
+    "processing_time_seconds": 25.8,
+    "created_at": "2026-01-15T10:32:00Z",
+    "updated_at": "2026-01-15T10:32:25Z",
+    "final_output": {
+      "ai_suggested_listing_price": 98000,
+      "ai_suggested_selling_price": 92000,
+      "flagged_for_review": false,
+      "flag_reasons": [],
+      "tlc_matches": 41,
+      "external_matches": 9,
+      "price_variance_cv": 5.4,
+      "title_confidence": 92
+    }
+  },
+  {
+    "proposal_id": 471593,
+
+    "ai_status": "done",
+    "success": true,
+    "processing_time_seconds": 25.8,
+    "created_at": "2026-01-15T10:32:00Z",
+    "updated_at": "2026-01-15T10:32:25Z",
+    "final_output": {
+      "ai_suggested_listing_price": 255000,
+      "ai_suggested_selling_price": 238000,
+      "flagged_for_review": false,
+      "flag_reasons": [],
+      "tlc_matches": 78,
+      "external_matches": 21,
+      "price_variance_cv": 4.9,
+      "title_confidence": 97
+    }
+  },
+  {
     "proposal_id": 471601,
+    "ai_status": "done",
+    "success": true,
+    "processing_time_seconds": 25.8,
+    "created_at": "2026-01-15T10:32:00Z",
+    "updated_at": "2026-01-15T10:32:25Z",
+    "final_output": {
+      "ai_suggested_listing_price": 124000,
+      "ai_suggested_selling_price": 118000,
+      "flagged_for_review": false,
+      "flag_reasons": [],
+      "tlc_matches": 35,
+      "external_matches": 7,
+      "price_variance_cv": 7.1,
+      "title_confidence": 90
+    }
+  },
+  {
+    "proposal_id": 471615,
+    "ai_status": "done",
+    "success": true,
+    "processing_time_seconds": 25.8,
+    "created_at": "2026-01-15T10:32:00Z",
+    "updated_at": "2026-01-15T10:32:25Z",
+    "final_output": {
+      "ai_suggested_listing_price": 310000,
+      "ai_suggested_selling_price": 295000,
+      "flagged_for_review": false,
+      "flag_reasons": [],
+      "tlc_matches": 84,
+      "external_matches": 26,
+      "price_variance_cv": 3.8,
+      "title_confidence": 98
+    }
+  },
+  {
+    "proposal_id": 471602,
     "ai_status": "failed",
     "success": false,
     "error_code": "VISION_ANALYSIS_FAILED",
-    "error_message": "Vision analysis failed: Unable to identify product from provided images. All 3 AI models returned low confidence (<50%)...",
-    "error_details": {
-      "step_failed": "step_1_vision_analysis",
-      "gemini_vision_confidence": 32,
-      "gpt4o_vision_confidence": 28,
-      "google_lens_matches": 0,
-      "retry_attempted": true,
-      "retry_count": 2
-    },
-    "step_2_category_gate": null,
-    "step_3_consensus_scoring": null,
+    "error_message": "Vision analysis failed: Unable to identify product from provided images. All 3 AI models returned low confidence (<50%).",
     "final_output": {
       "ai_suggested_listing_price": null,
       "ai_suggested_selling_price": null,
@@ -37,941 +123,7 @@
       "external_matches": 0,
       "title_confidence": 0
     }
-     },
+  }
+]
 
-    {
-      "proposal_id": 471534,
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 18.5,
-      "created_at": "2026-01-15T10:30:00Z",
-      "updated_at": "2026-01-15T10:30:18Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": false,
-        "reasons": [],
-        "review_notes": null
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001234-1.jpg",
-          "https://cdn.tlc.com/images/prop-001234-2.jpg",
-          "https://cdn.tlc.com/images/prop-001234-3.jpg",
-          "https://cdn.tlc.com/images/prop-001234-4.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001234-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 95,
-          "reasoning": "Image 1 shows full frontal view of bag with logo visible"
-        },
-        "original_title": "LV Bag Brown",
-        "category_hint": "Handbags"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2340,
-          "extracted_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
-          "brand": "Louis Vuitton",
-          "model": "Neverfull",
-          "size": "MM",
-          "color": "Brown",
-          "material": "Monogram Canvas",
-          "category": "Handbags",
-          "subcategory": "Tote Bag",
-          "confidence": 95,
-          "scale_detected": false,
-          "measured_dimensions": null,
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 2100,
-          "extracted_title": "Louis Vuitton Neverfull MM Monogram",
-          "brand": "Louis Vuitton",
-          "model": "Neverfull",
-          "size": "MM",
-          "color": "Brown/Tan",
-          "material": "Coated Canvas",
-          "category": "Handbags",
-          "subcategory": "Tote",
-          "confidence": 92,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 3200,
-          "top_titles": [
-            {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "url": "https://fashionphile.com/..."},
-            {"title": "LV Neverfull MM Tote Bag", "source": "Vestiaire Collective", "price": 1380, "url": "https://vestiairecollective.com/..."}
-          ],
-          "extracted_brand": "Louis Vuitton",
-          "extracted_model": "Neverfull MM",
-          "category": "Handbags",
-          "external_prices_found": 8
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Handbags",
-        "gpt4o_category": "Handbags",
-        "serp_category": "Handbags",
-        "agreed_category": "Handbags",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 94,
-        "canonical_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
-        "canonical_brand": "Louis Vuitton",
-        "canonical_model": "Neverfull",
-        "canonical_size": "MM",
-        "canonical_color": "Brown",
-        "canonical_material": "Monogram Canvas",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["MM", "32"],
-        "normalized_size": "MM (≈32cm)",
-        "size_equivalents": ["MM", "32cm", "31cm", "32"],
-        "size_source": "model_detection",
-        "brand_model_context": "Louis Vuitton Neverfull"
-      },
-      "step_5_database_search": {
-        "search_query": "Louis Vuitton Neverfull MM Monogram",
-        "tlc_inventory": {
-          "total_matches": 47,
-          "exact_matches": 12,
-          "high_quality_matches": 28,
-          "products": [
-            {"product_id": "TLC-987654", "title": "Louis Vuitton Neverfull MM Monogram Canvas Tote", "price": 1180, "listing_price": 1350, "sold_price": 1180, "condition": "Good", "match_score": 95, "sold_date": "2025-12-20", "image_url": "https://cdn.tlc.com/..."},
-            {"product_id": "TLC-987653", "title": "Louis Vuitton Neverfull MM Monogram Brown", "price": 1150, "listing_price": 1320, "sold_price": 1150, "condition": "Good", "match_score": 92, "sold_date": "2025-12-15", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Louis Vuitton Neverfull MM", "brand": "Louis Vuitton", "orp": 2030, "pristine_price": 1600, "excellent_price": 1400, "good_price": 1200, "fair_price": 950, "match_score": 90}]
-        },
-        "external_sites": {
-          "total_matches": 8,
-          "sites_searched": ["Fashionphile", "Vestiaire Collective", "The Luxury Closet"],
-          "products": [
-            {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 88, "url": "https://fashionphile.com/...", "in_stock": true},
-            {"title": "LV Neverfull MM Tote", "source": "Vestiaire Collective", "price": 1380, "original_condition": "Good condition", "mapped_condition": "Good", "match_score": 82, "url": "https://vestiairecollective.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Good",
-        "match_score_filtering": {"total_products_before": 56, "exact_90_plus": 13, "high_quality_80_89": 29, "similar_70_79": 8, "excluded_below_70": 6, "products_used": 42},
-        "outlier_removal": {"method": "IQR", "q1": 1165, "q3": 1415, "iqr": 250, "lower_bound": 790, "upper_bound": 1790, "outliers_removed": 2, "outlier_values": [2500, 2200]},
-        "median_calculation": {"tlc_prices_count": 28, "all_prices_count": 40, "source_used": "tlc_median", "prices_used": [1100, 1120, 1150, 1150, 1180, 1180, 1200, 1200, 1220, 1250], "median_value": 1180},
-        "trend_adjustment": {"trend_direction": "stable", "pct_change": 2.3, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 1180, "price_after_adjustment": 1180},
-        "recommended_prices_by_condition": {"pristine": 1580, "excellent": 1380, "good": 1180, "fair": 920}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [1450, 1380, 1420, 1390, 1480], "tlc_listing_prices": [1350, 1320, 1380, 1400, 1290], "tlc_sold_prices": [1180, 1150, 1200, 1220, 1100], "avg_external": 1424, "avg_listing": 1348, "avg_sold": 1170},
-        "listing_to_sold_ratio": 0.87,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": 1350,
-        "suggested_selling_price": 1175,
-        "ai_reasoning": "TLC historical data shows 87% listing-to-sold ratio. External market is priced higher at avg $1,424. Recommend listing at $1,350 for competitive positioning while maintaining margin. Expected sale at $1,175 based on historical patterns.",
-        "ai_confidence": "high"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 1248, "std_dev": 112, "cv_percent": 9.0, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-12-20", "oldest_sale_date": "2025-06-15", "days_since_last_sale": 26, "freshness_level": "fresh"},
-        "source_contribution": {"tlc_inventory_pct": 56, "excel_reference_pct": 2, "external_sites_pct": 42, "tlc_inventory_count": 28, "excel_reference_count": 1, "external_sites_count": 21},
-        "overall_confidence": {"score": 87, "grade": "high", "factors": ["Strong TLC data (28 matches)", "Low price variance (9.0%)", "Fresh data (26 days)", "High model agreement (3/3)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": false,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "28 matches", "triggered": false},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "26 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "9.0% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Monogram", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$1,180", "triggered": false}
-        ],
-        "manual_review_required": false,
-        "review_reason": null
-      },
-      "final_output": {
-        "ai_suggested_listing_price": 1350,
-        "ai_suggested_selling_price": 1175,
-        "recommended_price_by_condition": {"pristine": 1580, "excellent": 1380, "good": 1180, "fair": 920},
-        "selected_condition": "Good",
-        "confidence": "high",
-        "confidence_score": 87,
-        "data_points_used": 40,
-        "price_source": "tlc_median",
-        "trend_direction": "stable",
-        "trend_pct_change": 2.3,
-        "flagged_for_review": false,
-        "flag_reasons": [],
-
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-
-      }
-    },
-    {
-      "proposal_id": 471518,
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 21.3,
-      "created_at": "2026-01-15T10:31:00Z",
-      "updated_at": "2026-01-15T10:31:21Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": false,
-        "reasons": [],
-        "review_notes": null
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001235-1.jpg",
-          "https://cdn.tlc.com/images/prop-001235-2.jpg",
-          "https://cdn.tlc.com/images/prop-001235-3.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001235-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 98,
-          "reasoning": "Image 1 shows front view of Chanel Classic Flap with interlocking CC logo"
-        },
-        "original_title": "Chanel Black Leather Bag",
-        "category_hint": "Handbags"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2580,
-          "extracted_title": "Chanel Classic Flap Medium Black Caviar Leather Gold Hardware Shoulder Bag",
-          "brand": "Chanel",
-          "model": "Classic Flap",
-          "size": "Medium",
-          "color": "Black",
-          "material": "Caviar Leather",
-          "category": "Handbags",
-          "subcategory": "Shoulder Bag",
-          "confidence": 97,
-          "scale_detected": false,
-          "measured_dimensions": null,
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 2250,
-          "extracted_title": "Chanel Medium Classic Flap Caviar GHW",
-          "brand": "Chanel",
-          "model": "Classic Flap",
-          "size": "Medium/M/L",
-          "color": "Black",
-          "material": "Caviar",
-          "category": "Handbags",
-          "subcategory": "Flap Bag",
-          "confidence": 95,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 3400,
-          "top_titles": [
-            {"title": "Chanel Classic Double Flap Medium Caviar", "source": "Fashionphile", "price": 8200, "url": "https://fashionphile.com/..."},
-            {"title": "Chanel Medium Classic Flap Black GHW", "source": "The RealReal", "price": 7850, "url": "https://therealreal.com/..."}
-          ],
-          "extracted_brand": "Chanel",
-          "extracted_model": "Classic Flap Medium",
-          "category": "Handbags",
-          "external_prices_found": 12
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Handbags",
-        "gpt4o_category": "Handbags",
-        "serp_category": "Handbags",
-        "agreed_category": "Handbags",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 96,
-        "canonical_title": "Chanel Classic Flap Medium Black Caviar Leather Gold Hardware Shoulder Bag",
-        "canonical_brand": "Chanel",
-        "canonical_model": "Classic Flap",
-        "canonical_size": "Medium",
-        "canonical_color": "Black",
-        "canonical_material": "Caviar Leather",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["Medium", "M/L", "25"],
-        "normalized_size": "Medium (25.5cm)",
-        "size_equivalents": ["Medium", "M/L", "25cm", "25.5cm"],
-        "size_source": "model_detection",
-        "brand_model_context": "Chanel Classic Flap"
-      },
-      "step_5_database_search": {
-        "search_query": "Chanel Classic Flap Medium Caviar Black",
-        "tlc_inventory": {
-          "total_matches": 35,
-          "exact_matches": 8,
-          "high_quality_matches": 22,
-          "products": [
-            {"product_id": "TLC-876543", "title": "Chanel Classic Flap Medium Caviar Black GHW", "price": 7800, "listing_price": 8500, "sold_price": 7800, "condition": "Excellent", "match_score": 96, "sold_date": "2025-12-18", "image_url": "https://cdn.tlc.com/..."},
-            {"product_id": "TLC-876542", "title": "Chanel Medium Classic Double Flap Caviar", "price": 7650, "listing_price": 8200, "sold_price": 7650, "condition": "Good", "match_score": 93, "sold_date": "2025-12-10", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Chanel Classic Flap Medium", "brand": "Chanel", "orp": 10800, "pristine_price": 8500, "excellent_price": 7800, "good_price": 7200, "fair_price": 6500, "match_score": 92}]
-        },
-        "external_sites": {
-          "total_matches": 12,
-          "sites_searched": ["Fashionphile", "The RealReal", "Vestiaire Collective", "Rebag"],
-          "products": [
-            {"title": "Chanel Classic Double Flap Medium Caviar", "source": "Fashionphile", "price": 8200, "original_condition": "Excellent", "mapped_condition": "Excellent", "match_score": 94, "url": "https://fashionphile.com/...", "in_stock": true},
-            {"title": "Chanel Medium Classic Flap Black GHW", "source": "The RealReal", "price": 7850, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 90, "url": "https://therealreal.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Excellent",
-        "match_score_filtering": {"total_products_before": 48, "exact_90_plus": 10, "high_quality_80_89": 25, "similar_70_79": 9, "excluded_below_70": 4, "products_used": 44},
-        "outlier_removal": {"method": "IQR", "q1": 7500, "q3": 8200, "iqr": 700, "lower_bound": 6450, "upper_bound": 9250, "outliers_removed": 1, "outlier_values": [9800]},
-        "median_calculation": {"tlc_prices_count": 22, "all_prices_count": 35, "source_used": "tlc_median", "prices_used": [7500, 7600, 7650, 7700, 7800, 7800, 7850, 7900, 8000, 8100], "median_value": 7800},
-        "trend_adjustment": {"trend_direction": "increasing", "pct_change": 5.2, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 7800, "price_after_adjustment": 7800},
-        "recommended_prices_by_condition": {"pristine": 8500, "excellent": 7800, "good": 7200, "fair": 6500}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [8200, 7850, 8100, 7950, 8300], "tlc_listing_prices": [8500, 8200, 8400, 8100, 8300], "tlc_sold_prices": [7800, 7650, 7900, 7700, 7850], "avg_external": 8080, "avg_listing": 8300, "avg_sold": 7780},
-        "listing_to_sold_ratio": 0.94,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": 7400,
-        "suggested_selling_price": 6900,
-        "ai_reasoning": "Chanel Classic Flaps maintain strong resale value with 94% sell-through. Market trend is increasing (+5.2%). Recommend listing at $7,400 aligned with current excellent condition median. Strong demand supports premium positioning.",
-        "ai_confidence": "high"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 7820, "std_dev": 310, "cv_percent": 4.0, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-12-18", "oldest_sale_date": "2025-07-20", "days_since_last_sale": 28, "freshness_level": "fresh"},
-        "source_contribution": {"tlc_inventory_pct": 63, "excel_reference_pct": 3, "external_sites_pct": 34, "tlc_inventory_count": 22, "excel_reference_count": 1, "external_sites_count": 12},
-        "overall_confidence": {"score": 89, "grade": "high", "factors": ["Strong TLC data (22 matches)", "Very low price variance (4.0%)", "Fresh data (28 days)", "High model agreement (3/3)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": false,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "22 matches", "triggered": false},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "28 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "4.0% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Caviar", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$7,800", "triggered": false}
-        ],
-        "manual_review_required": false,
-        "review_reason": null
-      },
-      "final_output": {
-        "ai_suggested_listing_price": 7400,
-        "ai_suggested_selling_price": 6900,
-        "recommended_price_by_condition": {"pristine": 8500, "excellent": 7800, "good": 7200, "fair": 6500},
-        "selected_condition": "Excellent",
-        "confidence": "high",
-        "confidence_score": 89,
-        "data_points_used": 35,
-        "price_source": "tlc_median",
-        "trend_direction": "increasing",
-        "trend_pct_change": 5.2,
-        "flagged_for_review": false,
-        "flag_reasons": [],
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-      }
-    },
-    {
-      "proposal_id": 471593,
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 25.8,
-      "created_at": "2026-01-15T10:32:00Z",
-      "updated_at": "2026-01-15T10:32:25Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": true,
-        "reasons": [
-      {
-        "flag": "low_tlc_matches",
-        "reason": "only 2 internal data"
-      },
-      {
-        "flag": "high_mismatch_data",
-        "reason": "price variance greater than 30%"
-      }
-      ]
-     ,
-        "review_notes": "Hermès Birkin requires manual pricing review due to limited TLC data and high value"
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001236-1.jpg",
-          "https://cdn.tlc.com/images/prop-001236-2.jpg",
-          "https://cdn.tlc.com/images/prop-001236-3.jpg",
-          "https://cdn.tlc.com/images/prop-001236-4.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001236-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 99,
-          "reasoning": "Image 1 shows front view of Hermès Birkin with distinctive lock and clochette"
-        },
-        "original_title": "Hermes Birkin Bag Etoupe",
-        "category_hint": "Handbags"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2800,
-          "extracted_title": "Hermès Birkin 30 Etoupe Togo Leather Palladium Hardware",
-          "brand": "Hermès",
-          "model": "Birkin",
-          "size": "30",
-          "color": "Etoupe",
-          "material": "Togo Leather",
-          "category": "Handbags",
-          "subcategory": "Top Handle Bag",
-          "confidence": 98,
-          "scale_detected": true,
-          "measured_dimensions": "30cm x 22cm x 16cm",
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 2450,
-          "extracted_title": "Hermès Birkin 30 Etoupe Togo PHW",
-          "brand": "Hermès",
-          "model": "Birkin",
-          "size": "30",
-          "color": "Etoupe/Taupe",
-          "material": "Togo",
-          "category": "Handbags",
-          "subcategory": "Birkin",
-          "confidence": 97,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 3800,
-          "top_titles": [
-            {"title": "Hermès Birkin 30 Etoupe Togo PHW", "source": "Fashionphile", "price": 18500, "url": "https://fashionphile.com/..."},
-            {"title": "Hermes Birkin 30cm Etoupe Palladium", "source": "The RealReal", "price": 17200, "url": "https://therealreal.com/..."}
-          ],
-          "extracted_brand": "Hermès",
-          "extracted_model": "Birkin 30",
-          "category": "Handbags",
-          "external_prices_found": 6
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Handbags",
-        "gpt4o_category": "Handbags",
-        "serp_category": "Handbags",
-        "agreed_category": "Handbags",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 98,
-        "canonical_title": "Hermès Birkin 30 Etoupe Togo Leather Palladium Hardware",
-        "canonical_brand": "Hermès",
-        "canonical_model": "Birkin",
-        "canonical_size": "30",
-        "canonical_color": "Etoupe",
-        "canonical_material": "Togo Leather",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["30", "30cm"],
-        "normalized_size": "30 (30cm)",
-        "size_equivalents": ["30", "30cm", "B30"],
-        "size_source": "model_detection",
-        "brand_model_context": "Hermès Birkin"
-      },
-      "step_5_database_search": {
-        "search_query": "Hermès Birkin 30 Etoupe Togo",
-        "tlc_inventory": {
-          "total_matches": 3,
-          "exact_matches": 1,
-          "high_quality_matches": 2,
-          "products": [
-            {"product_id": "TLC-765432", "title": "Hermès Birkin 30 Etoupe Togo PHW", "price": 17500, "listing_price": 18500, "sold_price": 17500, "condition": "Excellent", "match_score": 98, "sold_date": "2025-10-15", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Hermès Birkin 30", "brand": "Hermès", "orp": 11400, "pristine_price": null, "excellent_price": null, "good_price": null, "fair_price": null, "match_score": 85}]
-        },
-        "external_sites": {
-          "total_matches": 6,
-          "sites_searched": ["Fashionphile", "The RealReal", "Vestiaire Collective", "Rebag"],
-          "products": [
-            {"title": "Hermès Birkin 30 Etoupe Togo PHW", "source": "Fashionphile", "price": 18500, "original_condition": "Excellent", "mapped_condition": "Excellent", "match_score": 96, "url": "https://fashionphile.com/...", "in_stock": true},
-            {"title": "Hermes Birkin 30cm Etoupe Palladium", "source": "The RealReal", "price": 17200, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 92, "url": "https://therealreal.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Excellent",
-        "match_score_filtering": {"total_products_before": 10, "exact_90_plus": 3, "high_quality_80_89": 4, "similar_70_79": 2, "excluded_below_70": 1, "products_used": 9},
-        "outlier_removal": {"method": "IQR", "q1": 17000, "q3": 18500, "iqr": 1500, "lower_bound": 14750, "upper_bound": 20750, "outliers_removed": 0, "outlier_values": []},
-        "median_calculation": {"tlc_prices_count": 3, "all_prices_count": 9, "source_used": "all_sources_median", "prices_used": [16800, 17200, 17500, 17800, 18200, 18500], "median_value": 17650},
-        "trend_adjustment": {"trend_direction": "stable", "pct_change": 1.8, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 17650, "price_after_adjustment": 17650},
-        "recommended_prices_by_condition": {"pristine": null, "excellent": null, "good": null, "fair": null}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [18500, 17200, 18200, 17800, 18000], "tlc_listing_prices": [18500], "tlc_sold_prices": [17500], "avg_external": 17940, "avg_listing": 18500, "avg_sold": 17500},
-        "listing_to_sold_ratio": 0.95,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": null,
-        "suggested_selling_price": null,
-        "ai_reasoning": "Insufficient TLC historical data for Birkin 30 Etoupe (only 3 matches). High-value item ($17,500+) requires manual pricer review. External market range: $17,200-$18,500. Recommend manual pricing by specialist.",
-        "ai_confidence": "low"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 17650, "std_dev": 580, "cv_percent": 3.3, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-10-15", "oldest_sale_date": "2025-04-20", "days_since_last_sale": 92, "freshness_level": "recent"},
-        "source_contribution": {"tlc_inventory_pct": 33, "excel_reference_pct": 11, "external_sites_pct": 56, "tlc_inventory_count": 3, "excel_reference_count": 1, "external_sites_count": 5},
-        "overall_confidence": {"score": 45, "grade": "low", "factors": ["Limited TLC data (3 matches)", "High value item", "Relies heavily on external data (56%)", "Data aging (92 days)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": true,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "3 matches", "triggered": true},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "92 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "3.3% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Togo", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$17,650", "triggered": true}
-        ],
-        "manual_review_required": true,
-        "review_reason": "Low TLC matches (3) and high value ($17,650) - recommend specialist review"
-      },
-      "final_output": {
-        "ai_suggested_listing_price": null,
-        "ai_suggested_selling_price": null,
-        "recommended_price_by_condition": {"pristine": null, "excellent": null, "good": null, "fair": null},
-        "selected_condition": "Excellent",
-        "confidence": "low",
-        "confidence_score": 45,
-        "data_points_used": 9,
-        "price_source": "insufficient_data",
-        "trend_direction": "stable",
-        "trend_pct_change": 1.8,
-        "flagged_for_review": true,
-        "flag_reasons": [
-        {
-        "flag": "low_tlc_matches",
-        "reason": "only 2 internal data"
-        },
-        {
-        "flag": "high_mismatch_data",
-        "reason": "price variance greater than 30%"
-        }
-        ],
-
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-
-      }
-    },
-    {
-      "proposal_id": 471602,
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 22.7,
-      "created_at": "2026-01-15T10:34:00Z",
-      "updated_at": "2026-01-15T10:34:22Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": false,
-        "reasons": [],
-        "review_notes": null
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001238-1.jpg",
-          "https://cdn.tlc.com/images/prop-001238-2.jpg",
-          "https://cdn.tlc.com/images/prop-001238-3.jpg",
-          "https://cdn.tlc.com/images/prop-001238-4.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001238-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 97,
-          "reasoning": "Image 1 shows front dial view of Rolex Submariner with distinctive bezel"
-        },
-        "original_title": "Rolex Black Watch",
-        "category_hint": "Watches"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2650,
-          "extracted_title": "Rolex Submariner Date 116610LN Black Dial Stainless Steel Men's Wristwatch 40mm",
-          "brand": "Rolex",
-          "model": "Submariner",
-          "size": "40mm",
-          "color": "Black",
-          "material": "Stainless Steel",
-          "category": "Watches",
-          "subcategory": "Men's Wristwatch",
-          "confidence": 96,
-          "scale_detected": true,
-          "measured_dimensions": "40mm diameter",
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 2380,
-          "extracted_title": "Rolex Submariner 116610LN Black Steel",
-          "brand": "Rolex",
-          "model": "Submariner Date",
-          "size": "40mm",
-          "color": "Black Dial",
-          "material": "Oystersteel",
-          "category": "Watches",
-          "subcategory": "Dive Watch",
-          "confidence": 95,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 3500,
-          "top_titles": [
-            {"title": "Rolex Submariner Date 116610LN", "source": "Bob's Watches", "price": 12800, "url": "https://bobswatches.com/..."},
-            {"title": "Rolex Submariner Black 116610", "source": "Chrono24", "price": 13200, "url": "https://chrono24.com/..."}
-          ],
-          "extracted_brand": "Rolex",
-          "extracted_model": "Submariner 116610LN",
-          "category": "Watches",
-          "external_prices_found": 18
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Watches",
-        "gpt4o_category": "Watches",
-        "serp_category": "Watches",
-        "agreed_category": "Watches",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 95,
-        "canonical_title": "Rolex Submariner Date 116610LN Black Dial Stainless Steel Men's Wristwatch 40mm",
-        "canonical_brand": "Rolex",
-        "canonical_model": "Submariner Date",
-        "canonical_size": "40mm",
-        "canonical_color": "Black",
-        "canonical_material": "Stainless Steel",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["40mm", "40"],
-        "normalized_size": "40mm",
-        "size_equivalents": ["40mm", "40"],
-        "size_source": "scale_measurement",
-        "brand_model_context": "Rolex Submariner"
-      },
-      "step_5_database_search": {
-        "search_query": "Rolex Submariner 116610LN Black",
-        "tlc_inventory": {
-          "total_matches": 28,
-          "exact_matches": 8,
-          "high_quality_matches": 18,
-          "products": [
-            {"product_id": "TLC-543210", "title": "Rolex Submariner Date 116610LN Black Steel", "price": 12500, "listing_price": 13200, "sold_price": 12500, "condition": "Excellent", "match_score": 97, "sold_date": "2025-12-15", "image_url": "https://cdn.tlc.com/..."},
-            {"product_id": "TLC-543209", "title": "Rolex Submariner 116610LN 40mm", "price": 12200, "listing_price": 12800, "sold_price": 12200, "condition": "Good", "match_score": 94, "sold_date": "2025-12-08", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Rolex Submariner Date 116610LN", "brand": "Rolex", "orp": 9150, "pristine_price": 13500, "excellent_price": 12800, "good_price": 12000, "fair_price": 11200, "match_score": 95}]
-        },
-        "external_sites": {
-          "total_matches": 18,
-          "sites_searched": ["Bob's Watches", "Chrono24", "Crown & Caliber", "Watchfinder"],
-          "products": [
-            {"title": "Rolex Submariner Date 116610LN", "source": "Bob's Watches", "price": 12800, "original_condition": "Excellent", "mapped_condition": "Excellent", "match_score": 96, "url": "https://bobswatches.com/...", "in_stock": true},
-            {"title": "Rolex Submariner Black 116610", "source": "Chrono24", "price": 13200, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 92, "url": "https://chrono24.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Excellent",
-        "match_score_filtering": {"total_products_before": 47, "exact_90_plus": 12, "high_quality_80_89": 25, "similar_70_79": 8, "excluded_below_70": 2, "products_used": 45},
-        "outlier_removal": {"method": "IQR", "q1": 12200, "q3": 13100, "iqr": 900, "lower_bound": 10850, "upper_bound": 14450, "outliers_removed": 1, "outlier_values": [15200]},
-        "median_calculation": {"tlc_prices_count": 18, "all_prices_count": 32, "source_used": "tlc_median", "prices_used": [12100, 12200, 12300, 12400, 12500, 12600, 12700, 12800, 12900, 13000], "median_value": 12550},
-        "trend_adjustment": {"trend_direction": "stable", "pct_change": 0.8, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 12550, "price_after_adjustment": 12550},
-        "recommended_prices_by_condition": {"pristine": 13500, "excellent": 12800, "good": 12000, "fair": 11200}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [12800, 13200, 12600, 13000, 12900], "tlc_listing_prices": [13200, 12800, 13100, 12900, 13000], "tlc_sold_prices": [12500, 12200, 12600, 12400, 12550], "avg_external": 12900, "avg_listing": 13000, "avg_sold": 12450},
-        "listing_to_sold_ratio": 0.96,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": 12800,
-        "suggested_selling_price": 12300,
-        "ai_reasoning": "Rolex Submariner 116610LN has stable market with 96% sell-through rate. External market averaging $12,900. Strong TLC data supports $12,800 listing. Watch market stable with +0.8% trend. Model reference verified.",
-        "ai_confidence": "high"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 12580, "std_dev": 420, "cv_percent": 3.3, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-12-15", "oldest_sale_date": "2025-06-22", "days_since_last_sale": 31, "freshness_level": "fresh"},
-        "source_contribution": {"tlc_inventory_pct": 56, "excel_reference_pct": 3, "external_sites_pct": 41, "tlc_inventory_count": 18, "excel_reference_count": 1, "external_sites_count": 13},
-        "overall_confidence": {"score": 88, "grade": "high", "factors": ["Good TLC data (18 matches)", "Very low price variance (3.3%)", "Fresh data (31 days)", "Reference number verified (116610LN)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": false,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "18 matches", "triggered": false},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "31 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "3.3% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Production", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$12,550", "triggered": false}
-        ],
-        "manual_review_required": false,
-        "review_reason": null
-      },
-      "final_output": {
-        "ai_suggested_listing_price": 12800,
-        "ai_suggested_selling_price": 12300,
-        "recommended_price_by_condition": {"pristine": 13500, "excellent": 12800, "good": 12000, "fair": 11200},
-        "selected_condition": "Excellent",
-        "confidence": "high",
-        "confidence_score": 88,
-        "data_points_used": 32,
-        "price_source": "tlc_median",
-        "trend_direction": "stable",
-        "trend_pct_change": 0.8,
-        "flagged_for_review": false,
-        "flag_reasons": [],
-
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-
-      }
-    },
-    {
-      "proposal_id": "PROP-2026-001239",
-      "ai_status": "done",
-      "success": true,
-      "processing_time_seconds": 17.8,
-      "created_at": "2026-01-15T10:35:00Z",
-      "updated_at": "2026-01-15T10:35:17Z",
-      "error_message": null,
-      "flag_for_review": {
-        "flagged": false,
-        "reasons": [],
-        "review_notes": null
-      },
-      "input": {
-        "image_urls": [
-          "https://cdn.tlc.com/images/prop-001239-1.jpg",
-          "https://cdn.tlc.com/images/prop-001239-2.jpg",
-          "https://cdn.tlc.com/images/prop-001239-3.jpg"
-        ],
-        "front_image_url": "https://cdn.tlc.com/images/prop-001239-1.jpg",
-        "front_image_detection": {
-          "method": "ai_detection",
-          "confidence": 96,
-          "reasoning": "Image 1 shows Cartier Love Bracelet with signature screw motifs"
-        },
-        "original_title": "Cartier Gold Bracelet",
-        "category_hint": "Jewelry"
-      },
-      "step_1_vision_analysis": {
-        "gemini_vision": {
-          "status": "success",
-          "processing_time_ms": 2100,
-          "extracted_title": "Cartier Love Bracelet 18K Yellow Gold Size 17 Women's Bangle",
-          "brand": "Cartier",
-          "model": "Love Bracelet",
-          "size": "17",
-          "color": "Yellow Gold",
-          "material": "18K Yellow Gold",
-          "category": "Jewelry",
-          "subcategory": "Bangle/Bracelet",
-          "confidence": 95,
-          "scale_detected": false,
-          "measured_dimensions": null,
-          "raw_response": "..."
-        },
-        "gpt4o_vision": {
-          "status": "success",
-          "processing_time_ms": 1950,
-          "extracted_title": "Cartier Love Bracelet Yellow Gold 17",
-          "brand": "Cartier",
-          "model": "Love",
-          "size": "17",
-          "color": "Gold",
-          "material": "18K Gold",
-          "category": "Jewelry",
-          "subcategory": "Bracelet",
-          "confidence": 94,
-          "raw_response": "..."
-        },
-        "google_lens_serp": {
-          "status": "success",
-          "processing_time_ms": 2900,
-          "top_titles": [
-            {"title": "Cartier Love Bracelet 18K Yellow Gold", "source": "Fashionphile", "price": 6800, "url": "https://fashionphile.com/..."},
-            {"title": "Cartier Love Bangle Yellow Gold Size 17", "source": "The RealReal", "price": 6500, "url": "https://therealreal.com/..."}
-          ],
-          "extracted_brand": "Cartier",
-          "extracted_model": "Love Bracelet",
-          "category": "Jewelry",
-          "external_prices_found": 10
-        }
-      },
-      "step_2_category_gate": {
-        "passed": true,
-        "gemini_category": "Jewelry",
-        "gpt4o_category": "Jewelry",
-        "serp_category": "Jewelry",
-        "agreed_category": "Jewelry",
-        "agreement_count": 3,
-        "voting_result": "unanimous",
-        "manual_override_required": false
-      },
-      "step_3_consensus_scoring": {
-        "overall_confidence": "high",
-        "confidence_score": 94,
-        "canonical_title": "Cartier Love Bracelet 18K Yellow Gold Size 17 Women's Bangle",
-        "canonical_brand": "Cartier",
-        "canonical_model": "Love Bracelet",
-        "canonical_size": "17",
-        "canonical_color": "Yellow Gold",
-        "canonical_material": "18K Yellow Gold",
-        "brand_agreement": 3,
-        "model_agreement": 3,
-        "size_agreement": 3,
-        "disagreements": []
-      },
-      "step_4_size_normalization": {
-        "detected_sizes": ["17", "17cm"],
-        "normalized_size": "Size 17",
-        "size_equivalents": ["17", "17cm", "Small/Medium"],
-        "size_source": "model_detection",
-        "brand_model_context": "Cartier Love Bracelet"
-      },
-      "step_5_database_search": {
-        "search_query": "Cartier Love Bracelet Yellow Gold 17",
-        "tlc_inventory": {
-          "total_matches": 42,
-          "exact_matches": 12,
-          "high_quality_matches": 28,
-          "products": [
-            {"product_id": "TLC-432109", "title": "Cartier Love Bracelet 18K Yellow Gold Size 17", "price": 6600, "listing_price": 7200, "sold_price": 6600, "condition": "Excellent", "match_score": 96, "sold_date": "2025-12-20", "image_url": "https://cdn.tlc.com/..."},
-            {"product_id": "TLC-432108", "title": "Cartier Love Bangle Yellow Gold 17", "price": 6450, "listing_price": 7000, "sold_price": 6450, "condition": "Good", "match_score": 93, "sold_date": "2025-12-12", "image_url": "https://cdn.tlc.com/..."}
-          ]
-        },
-        "excel_reference": {
-          "total_matches": 1,
-          "products": [{"title": "Cartier Love Bracelet 18K YG", "brand": "Cartier", "orp": 7650, "pristine_price": 7200, "excellent_price": 6800, "good_price": 6400, "fair_price": 5900, "match_score": 90}]
-        },
-        "external_sites": {
-          "total_matches": 10,
-          "sites_searched": ["Fashionphile", "The RealReal", "Vestiaire Collective", "Rebag"],
-          "products": [
-            {"title": "Cartier Love Bracelet 18K Yellow Gold", "source": "Fashionphile", "price": 6800, "original_condition": "Excellent", "mapped_condition": "Excellent", "match_score": 94, "url": "https://fashionphile.com/...", "in_stock": true},
-            {"title": "Cartier Love Bangle Yellow Gold Size 17", "source": "The RealReal", "price": 6500, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 90, "url": "https://therealreal.com/...", "in_stock": true}
-          ]
-        }
-      },
-      "step_6_price_calculation": {
-        "condition_selected": "Excellent",
-        "match_score_filtering": {"total_products_before": 53, "exact_90_plus": 14, "high_quality_80_89": 30, "similar_70_79": 7, "excluded_below_70": 2, "products_used": 51},
-        "outlier_removal": {"method": "IQR", "q1": 6400, "q3": 6900, "iqr": 500, "lower_bound": 5650, "upper_bound": 7650, "outliers_removed": 1, "outlier_values": [7900]},
-        "median_calculation": {"tlc_prices_count": 28, "all_prices_count": 42, "source_used": "tlc_median", "prices_used": [6350, 6400, 6450, 6500, 6550, 6600, 6650, 6700, 6750, 6800], "median_value": 6575},
-        "trend_adjustment": {"trend_direction": "increasing", "pct_change": 2.8, "adjustment_applied": false, "adjustment_pct": 0, "price_before_adjustment": 6575, "price_after_adjustment": 6575},
-        "recommended_prices_by_condition": {"pristine": 7200, "excellent": 6800, "good": 6400, "fair": 5900}
-      },
-      "step_7_ai_suggested_prices": {
-        "data_inputs": {"external_prices": [6800, 6500, 6700, 6600, 6750], "tlc_listing_prices": [7200, 7000, 7100, 6900, 7050], "tlc_sold_prices": [6600, 6450, 6550, 6500, 6580], "avg_external": 6670, "avg_listing": 7050, "avg_sold": 6536},
-        "listing_to_sold_ratio": 0.93,
-        "ai_model_used": "gemini-2.5-flash",
-        "suggested_listing_price": 6900,
-        "suggested_selling_price": 6400,
-        "ai_reasoning": "Cartier Love Bracelet maintains strong resale at 93% of listing. Market trend increasing (+2.8%). Gold jewelry holding value well. Recommend listing at $6,900 aligned with excellent condition. Size 17 is common, good liquidity.",
-        "ai_confidence": "high"
-      },
-      "step_8_quality_metrics": {
-        "variance": {"mean": 6580, "std_dev": 185, "cv_percent": 2.8, "variance_level": "low"},
-        "data_freshness": {"newest_sale_date": "2025-12-20", "oldest_sale_date": "2025-07-15", "days_since_last_sale": 26, "freshness_level": "fresh"},
-        "source_contribution": {"tlc_inventory_pct": 67, "excel_reference_pct": 2, "external_sites_pct": 31, "tlc_inventory_count": 28, "excel_reference_count": 1, "external_sites_count": 13},
-        "overall_confidence": {"score": 90, "grade": "high", "factors": ["Strong TLC data (28 matches)", "Very low price variance (2.8%)", "Fresh data (26 days)", "High model agreement (3/3)"]}
-      },
-      "step_9_rare_item_detection": {
-        "is_rare": false,
-        "triggers": [
-          {"trigger": "low_tlc_matches", "threshold": "< 5 matches", "actual_value": "28 matches", "triggered": false},
-          {"trigger": "no_recent_sales", "threshold": "> 6 months", "actual_value": "26 days", "triggered": false},
-          {"trigger": "high_price_variance", "threshold": "> 30% CV", "actual_value": "2.8% CV", "triggered": false},
-          {"trigger": "special_edition", "threshold": "Catogram, Supreme, etc.", "actual_value": "Standard Love", "triggered": false},
-          {"trigger": "high_value_item", "threshold": "> $15,000", "actual_value": "$6,575", "triggered": false}
-        ],
-        "manual_review_required": false,
-        "review_reason": null
-      },
-      "final_output": {
-        "ai_suggested_listing_price": 6900,
-        "ai_suggested_selling_price": 6400,
-        "recommended_price_by_condition": {"pristine": 7200, "excellent": 6800, "good": 6400, "fair": 5900},
-        "selected_condition": "Excellent",
-        "confidence": "high",
-        "confidence_score": 90,
-        "data_points_used": 42,
-        "price_source": "tlc_median",
-        "trend_direction": "increasing",
-        "trend_pct_change": 2.8,
-        "flagged_for_review": false,
-        "flag_reasons": [],
-
-        "tlc_matches": 47,           
-        "external_matches": 8,        
-        "price_variance_cv": 9.0,    
-        "title_confidence": 94  
-
-      }
-    }
-  ]
 }
