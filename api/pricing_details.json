@@ -73,7 +73,8 @@
       "Good",
       "Fair"
     ],
-    "selected_condition": "Good"
+    "selected_condition": "Good",
+    "match_cutoff": 75
   },
   "price_history": {
     "chart_data": [
