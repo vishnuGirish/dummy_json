@@ -552,6 +552,21 @@
     "tlc_matches": 75,
     "external_matches": 40,
     "price_variance_cv": 9.0,
-    "title_confidence": 94
+    "title_confidence": 94,
+    "price_card": {
+    "recommended_price": 2912,
+    "recommended_price_display": "$2,912",
+    "accuracy": {
+        "score": 85,
+        "max_score": 100,
+        "label": "HIGH ACCURACY",
+        "display": "HIGH ACCURACY (85/100)",
+        "color": "green"
+    },
+    "counts": {
+        "external": 40,
+        "internal": 75
+    }
+    }
   }
 }
