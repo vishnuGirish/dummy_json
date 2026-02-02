@@ -1,7 +1,5 @@
 {
   "proposal_id": 471534,
-  "status_code": 200,
-  "message": "successfull",
   "ai_status": "done",
   "success": true,
   "processing_time_seconds": 18.5,
@@ -18,92 +16,286 @@
     "max_score": 90,
     "confidence_percent": 100,
     "breakdown": {
-      "category": {"score": 40, "max": 40, "value": "Handbags"},
-      "brand": {"score": 30, "max": 30, "value": "Louis Vuitton"},
-      "style": {"score": 10, "max": 10, "value": "Neverfull"},
-      "size": {"score": 10, "max": 10, "value": "MM"}
+      "category": {
+        "score": 40,
+        "max": 40,
+        "value": "Handbags"
+      },
+      "brand": {
+        "score": 30,
+        "max": 30,
+        "value": "Hermès"
+      },
+      "style": {
+        "score": 10,
+        "max": 10,
+        "value": "Evelyne III"
+      },
+      "size": {
+        "score": 10,
+        "max": 10,
+        "value": "PM"
+      }
     }
   },
   "base_title": {
-    "title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
+    "title": "Hermès Evelyne III PM Clemence Leather Bleu Electrique",
     "confidence": "high",
     "parsed": {
-      "brand": "Louis Vuitton",
-      "model": "Neverfull",
-      "size": "MM",
-      "material": "Monogram Canvas"
+      "brand": "Hermès",
+      "model": "Evelyne III",
+      "size": "PM",
+      "material": "Clemence Leather"
     }
   },
   "search_queries": [
-    "Louis Vuitton Neverfull Monogram Canvas",
-    "Louis Vuitton Neverfull Monogram Canvas MM",
-    "Louis Vuitton Neverfull MM Monogram Canvas"
+    "Hermès Evelyne III Clemence Leather",
+    "Hermès Evelyne III Clemence Leather PM",
+    "Hermès Evelyne III PM Clemence Leather"
   ],
   "results_summary": {
-    "external_prices": 8,
-    "tlc_matches": 47,
+    "external_prices": 40,
+    "tlc_matches": 75,
     "master_sheet_refs": 1,
     "filter_applied": "Good condition, in-stock only"
   },
   "filters": {
-    "size_options": ["Nano", "Mini", "PM (~29cm)", "MM (~31cm)", "GM (~35cm)"],
-    "condition_options": ["Pristine", "Excellent", "Good", "Fair"],
+    "size_options": [
+      "Nano",
+      "Mini",
+      "PM (~29cm)",
+      "MM (~31cm)",
+      "GM (~35cm)"
+    ],
+    "condition_options": [
+      "Pristine",
+      "Excellent",
+      "Good",
+      "Fair"
+    ],
     "selected_condition": "Good"
+  },
+  "price_history": {
+    "chart_data": [
+      {"year": 2017, "price": 2100, "trend": 2100},
+      {"year": 2018, "price": 2200, "trend": 2150},
+      {"year": 2019, "price": 2400, "trend": 2233},
+      {"year": 2020, "price": 2100, "trend": 2233},
+      {"year": 2021, "price": 2550, "trend": 2350},
+      {"year": 2022, "price": 2900, "trend": 2517},
+      {"year": 2023, "price": 3200, "trend": 2883},
+      {"year": 2024, "price": 3100, "trend": 3067}
+    ],
+    "date_range": {
+      "start_year": 2017,
+      "end_year": 2024
+    },
+    "price_range": {
+      "min": 850,
+      "max": 3400
+    }
+  },
+  "trend_analysis": {
+    "direction": "stable",
+    "direction_icon": "arrow_forward",
+    "pct_change": 2.2,
+    "pct_display": "±2.2%",
+    "recommendation": "Price as recommended",
+    "data_period": "Last 7 years",
+    "days_since_last_sale": 12
+  },
+  "tlc_prices": {
+    "total_results": 75,
+    "sort_description": "Sorted by: Condition (Pristine → Excellent → Good → Fair), then by date (newest first) | ≥75% match shown",
+    "min_match_threshold": 75,
+    "products": [
+      {
+        "price": 3400,
+        "listing_price": 3800,
+        "match_pct": 85,
+        "match_display": "85% match",
+        "title": "hermès black taurillon clemence leather evelyne tpm bag",
+        "condition": "Pristine",
+        "sold_date": "Mar 18, 2024",
+        "image_url": "https://cdn.tlc.com/img1.jpg",
+        "product_id": "TLC-001"
+      },
+      {
+        "price": 3299,
+        "listing_price": 3650,
+        "match_pct": 92,
+        "match_display": "92% match",
+        "title": "hermès black clemence leather evelyne iii pm bag",
+        "condition": "Pristine",
+        "sold_date": "Feb 13, 2024",
+        "image_url": "https://cdn.tlc.com/img2.jpg",
+        "product_id": "TLC-002"
+      },
+      {
+        "price": 3960,
+        "listing_price": 4200,
+        "match_pct": 85,
+        "match_display": "85% match",
+        "title": "hermes green taurillon clemence leather evelyne tpm shoulder",
+        "condition": "Pristine",
+        "sold_date": "Apr 24, 2023",
+        "image_url": "https://cdn.tlc.com/img3.jpg",
+        "product_id": "TLC-003"
+      },
+      {
+        "price": 3150,
+        "listing_price": 3500,
+        "match_pct": 88,
+        "match_display": "88% match",
+        "title": "hermès noir clemence leather evelyne pm bag",
+        "condition": "Excellent",
+        "sold_date": "Mar 05, 2024",
+        "image_url": "https://cdn.tlc.com/img4.jpg",
+        "product_id": "TLC-004"
+      }
+    ]
+  },
+  "external_prices": {
+    "total_results": 40,
+    "priority_note": "Priority resellers (TRR, Rebag, Fashionphile, Vestiaire) shown first | Others: ≥80% match + Good condition",
+    "search_queries_used": [
+      "Hermès Evelyne III Clemence Leather",
+      "Hermès Evelyne III Clemence Leather PM",
+      "Hermès Evelyne III PM Clemence Leather"
+    ],
+    "sort_options": [
+      "Text Match",
+      "Price Low to High",
+      "Price High to Low",
+      "Match Score"
+    ],
+    "selected_sort": "Text Match",
+    "products": [
+      {
+        "price": 4025,
+        "source": "Fashionphile",
+        "is_priority_reseller": true,
+        "match_pct": 75,
+        "match_type": "txt",
+        "match_display": "75% txt",
+        "title": "Hermes Evelyne Bag Gen III Clemence PM",
+        "condition": "Good",
+        "original_condition": "Very Good",
+        "url": "https://fashionphile.com/p/1",
+        "in_stock": true,
+        "image_url": "https://cdn.fashionphile.com/img1.jpg"
+      },
+      {
+        "price": 3525,
+        "source": "Fashionphile",
+        "is_priority_reseller": true,
+        "match_pct": 75,
+        "match_type": "txt",
+        "match_display": "75% txt",
+        "title": "Hermès Taurillon Clemence Evelyne TPM Shoulder Bag",
+        "condition": "Good",
+        "original_condition": "Good condition",
+        "url": "https://fashionphile.com/p/2",
+        "in_stock": true,
+        "image_url": "https://cdn.fashionphile.com/img2.jpg"
+      },
+      {
+        "price": 3510,
+        "source": "Fashionphile",
+        "is_priority_reseller": true,
+        "match_pct": 75,
+        "match_type": "txt",
+        "match_display": "75% txt",
+        "title": "Hermès Taurillon Clemence Evelyne III PM Bleu Royal",
+        "condition": "Good",
+        "original_condition": "Good condition",
+        "url": "https://fashionphile.com/p/3",
+        "in_stock": true,
+        "image_url": "https://cdn.fashionphile.com/img3.jpg"
+      }
+    ]
+  },
+  "master_sheet": {
+    "total_results": 1,
+    "products": [
+      {
+        "title": "Hermès Evelyne III PM",
+        "brand": "Hermès",
+        "orp": 4100,
+        "match_pct": 95,
+        "prices_by_condition": {
+          "pristine": 3600,
+          "excellent": 3200,
+          "good": 2800,
+          "fair": 2200
+        }
+      }
+    ]
   },
   "input": {
     "image_urls": [
-      "https://cdn.tlc.com/images/prop-001234-1.jpg",
-      "https://cdn.tlc.com/images/prop-001234-2.jpg",
-      "https://cdn.tlc.com/images/prop-001234-3.jpg",
-      "https://cdn.tlc.com/images/prop-001234-4.jpg"
+      "https://cdn.tlc.com/images/prop-471534-1.jpg",
+      "https://cdn.tlc.com/images/prop-471534-2.jpg",
+      "https://cdn.tlc.com/images/prop-471534-3.jpg",
+      "https://cdn.tlc.com/images/prop-471534-4.jpg"
     ],
-    "front_image_url": "https://cdn.tlc.com/images/prop-001234-1.jpg",
+    "front_image_url": "https://cdn.tlc.com/images/prop-471534-1.jpg",
     "front_image_detection": {
       "method": "ai_detection",
       "confidence": 95,
       "reasoning": "Image 1 shows full frontal view of bag with logo visible"
     },
-    "original_title": "LV Bag Brown",
+    "original_title": "Hermes Bag Blue",
     "category_hint": "Handbags"
   },
   "step_1_vision_analysis": {
     "gemini_vision": {
       "status": "success",
       "processing_time_ms": 2340,
-      "extracted_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
-      "brand": "Louis Vuitton",
-      "model": "Neverfull",
-      "size": "MM",
-      "color": "Brown",
-      "material": "Monogram Canvas",
+      "extracted_title": "Hermès Evelyne III PM Clemence Leather Bleu Electrique",
+      "brand": "Hermès",
+      "model": "Evelyne III",
+      "size": "PM",
+      "color": "Bleu Electrique",
+      "material": "Clemence Leather",
       "category": "Handbags",
-      "subcategory": "Tote Bag",
+      "subcategory": "Crossbody Bag",
       "confidence": 95
     },
     "gpt4o_vision": {
       "status": "success",
       "processing_time_ms": 2100,
-      "extracted_title": "Louis Vuitton Neverfull MM Monogram",
-      "brand": "Louis Vuitton",
-      "model": "Neverfull",
-      "size": "MM",
-      "color": "Brown/Tan",
-      "material": "Coated Canvas",
+      "extracted_title": "Hermès Evelyne PM Clemence Blue",
+      "brand": "Hermès",
+      "model": "Evelyne",
+      "size": "PM",
+      "color": "Blue",
+      "material": "Clemence Leather",
       "category": "Handbags",
-      "subcategory": "Tote",
+      "subcategory": "Shoulder Bag",
       "confidence": 92
     },
     "google_lens_serp": {
       "status": "success",
       "processing_time_ms": 3200,
       "top_titles": [
-        {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "url": "https://fashionphile.com/p/123"},
-        {"title": "LV Neverfull MM Tote Bag", "source": "Vestiaire Collective", "price": 1380, "url": "https://vestiairecollective.com/p/456"}
+        {
+          "title": "Hermès Evelyne III PM Clemence",
+          "source": "Fashionphile",
+          "price": 4025,
+          "url": "https://fashionphile.com/p/123"
+        },
+        {
+          "title": "Hermes Evelyne PM Blue Electrique",
+          "source": "Vestiaire Collective",
+          "price": 3800,
+          "url": "https://vestiairecollective.com/p/456"
+        }
       ],
-      "extracted_brand": "Louis Vuitton",
-      "extracted_model": "Neverfull MM",
+      "extracted_brand": "Hermès",
+      "extracted_model": "Evelyne III PM",
       "category": "Handbags",
-      "external_prices_found": 8
+      "external_prices_found": 40
     }
   },
   "step_2_category_gate": {
@@ -119,107 +311,219 @@
   "step_3_consensus_scoring": {
     "overall_confidence": "high",
     "confidence_score": 94,
-    "canonical_title": "Louis Vuitton Neverfull MM Monogram Canvas Brown Tote Bag",
-    "canonical_brand": "Louis Vuitton",
-    "canonical_model": "Neverfull",
-    "canonical_size": "MM",
-    "canonical_color": "Brown",
-    "canonical_material": "Monogram Canvas",
+    "canonical_title": "Hermès Evelyne III PM Clemence Leather Bleu Electrique",
+    "canonical_brand": "Hermès",
+    "canonical_model": "Evelyne III",
+    "canonical_size": "PM",
+    "canonical_color": "Bleu Electrique",
+    "canonical_material": "Clemence Leather",
     "brand_agreement": 3,
     "model_agreement": 3,
     "size_agreement": 3,
     "disagreements": []
   },
   "step_4_size_normalization": {
-    "detected_sizes": ["MM", "32"],
-    "normalized_size": "MM (32cm)",
-    "size_equivalents": ["MM", "32cm", "31cm", "32"],
+    "detected_sizes": ["PM", "29"],
+    "normalized_size": "PM (29cm)",
+    "size_equivalents": ["PM", "29cm", "29"],
     "size_source": "model_detection",
-    "brand_model_context": "Louis Vuitton Neverfull"
+    "brand_model_context": "Hermès Evelyne III"
   },
   "step_5_database_search": {
-    "search_query": "Louis Vuitton Neverfull MM Monogram",
+    "search_query": "Hermès Evelyne III PM Clemence",
     "tlc_inventory": {
-      "total_matches": 47,
-      "exact_matches": 12,
-      "high_quality_matches": 28,
+      "total_matches": 75,
+      "exact_matches": 18,
+      "high_quality_matches": 42,
       "products": [
-        {"product_id": "TLC-987654", "title": "Louis Vuitton Neverfull MM Monogram Canvas Tote", "price": 1180, "listing_price": 1350, "sold_price": 1180, "condition": "Good", "match_score": 95, "sold_date": "2025-12-20", "image_url": "https://cdn.tlc.com/img1.jpg"},
-        {"product_id": "TLC-987653", "title": "Louis Vuitton Neverfull MM Monogram Brown", "price": 1150, "listing_price": 1320, "sold_price": 1150, "condition": "Good", "match_score": 92, "sold_date": "2025-12-15", "image_url": "https://cdn.tlc.com/img2.jpg"}
+        {
+          "product_id": "TLC-001",
+          "title": "hermès black taurillon clemence leather evelyne tpm bag",
+          "price": 3400,
+          "sold_price": 3400,
+          "listing_price": 3800,
+          "condition": "Pristine",
+          "match_score": 85,
+          "sold_date": "Mar 18, 2024",
+          "image_url": "https://cdn.tlc.com/img1.jpg"
+        },
+        {
+          "product_id": "TLC-002",
+          "title": "hermès black clemence leather evelyne iii pm bag",
+          "price": 3299,
+          "sold_price": 3299,
+          "listing_price": 3650,
+          "condition": "Pristine",
+          "match_score": 92,
+          "sold_date": "Feb 13, 2024",
+          "image_url": "https://cdn.tlc.com/img2.jpg"
+        },
+        {
+          "product_id": "TLC-003",
+          "title": "hermes green taurillon clemence leather evelyne tpm shoulder",
+          "price": 3960,
+          "sold_price": 3960,
+          "listing_price": 4200,
+          "condition": "Pristine",
+          "match_score": 85,
+          "sold_date": "Apr 24, 2023",
+          "image_url": "https://cdn.tlc.com/img3.jpg"
+        },
+        {
+          "product_id": "TLC-004",
+          "title": "hermès noir clemence leather evelyne pm bag",
+          "price": 3150,
+          "sold_price": 3150,
+          "listing_price": 3500,
+          "condition": "Excellent",
+          "match_score": 88,
+          "sold_date": "Mar 05, 2024",
+          "image_url": "https://cdn.tlc.com/img4.jpg"
+        }
       ]
     },
     "excel_reference": {
       "total_matches": 1,
       "products": [
-        {"title": "Louis Vuitton Neverfull MM", "brand": "Louis Vuitton", "orp": 2030, "pristine_price": 1600, "excellent_price": 1400, "good_price": 1200, "fair_price": 950, "match_score": 90}
+        {
+          "title": "Hermès Evelyne III PM",
+          "brand": "Hermès",
+          "orp": 4100,
+          "pristine_price": 3600,
+          "excellent_price": 3200,
+          "good_price": 2800,
+          "fair_price": 2200,
+          "match_score": 95
+        }
       ]
     },
     "external_sites": {
-      "total_matches": 8,
-      "sites_searched": ["Fashionphile", "Vestiaire Collective", "The Luxury Closet"],
+      "total_matches": 40,
+      "sites_searched": ["Fashionphile", "Vestiaire Collective", "The RealReal", "Rebag"],
       "products": [
-        {"title": "Louis Vuitton Neverfull MM Monogram", "source": "Fashionphile", "price": 1450, "original_condition": "Very Good", "mapped_condition": "Good", "match_score": 88, "url": "https://fashionphile.com/p/123", "in_stock": true},
-        {"title": "LV Neverfull MM Tote", "source": "Vestiaire Collective", "price": 1380, "original_condition": "Good condition", "mapped_condition": "Good", "match_score": 82, "url": "https://vestiairecollective.com/p/456", "in_stock": true}
+        {
+          "title": "Hermes Evelyne Bag Gen III Clemence PM",
+          "source": "Fashionphile",
+          "price": 4025,
+          "original_condition": "Very Good",
+          "mapped_condition": "Good",
+          "match_score": 75,
+          "match_type": "txt",
+          "url": "https://fashionphile.com/p/1",
+          "in_stock": true,
+          "image_url": "https://cdn.fashionphile.com/img1.jpg"
+        },
+        {
+          "title": "Hermès Taurillon Clemence Evelyne TPM Shoulder Bag",
+          "source": "Fashionphile",
+          "price": 3525,
+          "original_condition": "Good condition",
+          "mapped_condition": "Good",
+          "match_score": 75,
+          "match_type": "txt",
+          "url": "https://fashionphile.com/p/2",
+          "in_stock": true,
+          "image_url": "https://cdn.fashionphile.com/img2.jpg"
+        },
+        {
+          "title": "Hermès Taurillon Clemence Evelyne III PM Bleu Royal",
+          "source": "Fashionphile",
+          "price": 3510,
+          "original_condition": "Good condition",
+          "mapped_condition": "Good",
+          "match_score": 75,
+          "match_type": "txt",
+          "url": "https://fashionphile.com/p/3",
+          "in_stock": true,
+          "image_url": "https://cdn.fashionphile.com/img3.jpg"
+        }
       ]
     }
   },
   "step_6_price_calculation": {
     "condition_selected": "Good",
     "match_score_filtering": {
-      "total_products_before": 56,
-      "exact_90_plus": 13,
-      "high_quality_80_89": 29,
-      "similar_70_79": 8,
-      "excluded_below_70": 6,
-      "products_used": 42
+      "total_products_before": 115,
+      "exact_90_plus": 20,
+      "high_quality_80_89": 45,
+      "similar_70_79": 30,
+      "excluded_below_70": 20,
+      "products_used": 95
     },
     "outlier_removal": {
       "method": "IQR",
-      "q1": 1165,
-      "q3": 1415,
-      "iqr": 250,
-      "lower_bound": 790,
-      "upper_bound": 1790,
-      "outliers_removed": 2,
-      "outlier_values": [2500, 2200]
+      "q1": 2800,
+      "q3": 3600,
+      "iqr": 800,
+      "lower_bound": 1600,
+      "upper_bound": 4800,
+      "outliers_removed": 3,
+      "outlier_values": [5200, 5500, 1200]
     },
     "median_calculation": {
-      "tlc_prices_count": 28,
-      "all_prices_count": 40,
+      "tlc_prices_count": 42,
+      "all_prices_count": 92,
       "source_used": "tlc_median",
-      "prices_used": [1100, 1120, 1150, 1150, 1180, 1180, 1200, 1200, 1220, 1250],
-      "median_value": 1180
+      "prices_used": [2700, 2800, 2850, 2900, 2950, 3000, 3050, 3100, 3150, 3200],
+      "median_value": 2975
     },
     "trend_adjustment": {
       "trend_direction": "stable",
-      "pct_change": 2.3,
+      "pct_change": 2.2,
       "adjustment_applied": false,
       "adjustment_pct": 0,
-      "price_before_adjustment": 1180,
-      "price_after_adjustment": 1180
+      "price_before_adjustment": 2975,
+      "price_after_adjustment": 2975
     },
     "recommended_prices_by_condition": {
-      "pristine": 1580,
-      "excellent": 1380,
-      "good": 1180,
-      "fair": 920
+      "pristine": 3600,
+      "excellent": 3200,
+      "good": 2800,
+      "fair": 2200
+    },
+    "price_history": {
+      "chart_data": [
+        {"year": 2017, "price": 2100, "trend": 2100},
+        {"year": 2018, "price": 2200, "trend": 2150},
+        {"year": 2019, "price": 2400, "trend": 2233},
+        {"year": 2020, "price": 2100, "trend": 2233},
+        {"year": 2021, "price": 2550, "trend": 2350},
+        {"year": 2022, "price": 2900, "trend": 2517},
+        {"year": 2023, "price": 3200, "trend": 2883},
+        {"year": 2024, "price": 3100, "trend": 3067}
+      ],
+      "start_year": 2017,
+      "end_year": 2024,
+      "min_price": 850,
+      "max_price": 3400,
+      "data_period": "Last 7 years"
     }
   },
   "step_7_ai_suggested_prices": {
-    "suggested_listing_price": 1350,
-    "suggested_selling_price": 1175,
+    "suggested_listing_price": 3200,
+    "suggested_selling_price": 2800,
     "ai_reasoning": "Based on TLC historical data showing 87% listing-to-sold ratio for this model",
     "ai_confidence": "high",
     "data_inputs": {
-      "external_prices": [1450, 1380, 1420, 1390, 1480],
-      "tlc_listing_prices": [1350, 1320, 1380, 1400, 1290]
+      "external_prices": [4025, 3525, 3510, 3800, 3650],
+      "tlc_listing_prices": [3800, 3650, 4200, 3500, 3600]
     }
   },
   "step_8_quality_metrics": {
-    "overall_confidence": {"score": 87, "grade": "high"},
-    "data_points_used": 40,
-    "variance": {"cv_percent": 9.0, "is_acceptable": true},
-    "data_freshness": {"newest_days_ago": 12, "oldest_days_ago": 180, "avg_days_ago": 45}
+    "overall_confidence": {
+      "score": 87,
+      "grade": "high"
+    },
+    "data_points_used": 92,
+    "variance": {
+      "cv_percent": 9.0,
+      "is_acceptable": true
+    },
+    "data_freshness": {
+      "newest_days_ago": 12,
+      "oldest_days_ago": 365,
+      "avg_days_ago": 90
+    }
   },
   "step_9_rare_item_detection": {
     "is_rare": false,
@@ -228,20 +532,25 @@
     "review_reason": null
   },
   "final_output": {
-    "ai_suggested_listing_price": 1350,
-    "ai_suggested_selling_price": 1175,
-    "recommended_price_by_condition": {"pristine": 1580, "excellent": 1380, "good": 1180, "fair": 920},
+    "ai_suggested_listing_price": 3200,
+    "ai_suggested_selling_price": 2800,
+    "recommended_price_by_condition": {
+      "pristine": 3600,
+      "excellent": 3200,
+      "good": 2800,
+      "fair": 2200
+    },
     "selected_condition": "Good",
     "confidence": "high",
     "confidence_score": 87,
-    "data_points_used": 40,
+    "data_points_used": 92,
     "price_source": "tlc_median",
     "trend_direction": "stable",
-    "trend_pct_change": 2.3,
+    "trend_pct_change": 2.2,
     "flagged_for_review": false,
     "flag_reasons": [],
-    "tlc_matches": 47,
-    "external_matches": 8,
+    "tlc_matches": 75,
+    "external_matches": 40,
     "price_variance_cv": 9.0,
     "title_confidence": 94
   }
